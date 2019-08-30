@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang=it>
+
+<head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="Description" content="Renzo Carara - Contact form">
+      <meta name="robots" content="noindex">
+      <title>Renzo Carara - Contact Form</title>
+
+      <link rel="stylesheet" type="text/css" href="./contact.css">
+
+      <!-- google re-captcha js -->
+      <script src="https://www.google.com/recaptcha/api.js?hl=it" async defer></script>
+</head>
+
+<body>
+
+   <header class="header">
+
+      <div class="titles-logo clearfix">
+          <div class="titles">
+             <h1>Renzo Carara</h1>
+             <h4>Basic Resume information</h4>
+          </div>
+          <div class="logo">
+             <img src="../images/rc.png" alt="Renzo Carara image"
+                  title="Renzo Carara image"/>
+          </div>
+      </div>
+
+   </header>
+
+   <div class="flex-container">
+      <div class="title-container">
+           <h2>Modulo di contatto</h2>
+      </div>
+
+      <div class="form-container">
+         <form class="form-contact" action="contact.php" method="post" enctype="multipart/form-data" onsubmit="return checkEmail(this)">
+            <p><span class="star">*</span> <span style="font-size:0.8em">Campi obbligatori</span></p>
+            <p><label>Nome e Cognome:<span class="star">*</span><br></label>
+               <input class="field f-border" type="text" name="name" required /></p>
+            <p><label>E-mail:<span class="star">*</span><br></label>
+               <input class="field f-border" type="email" name="email" required /></p>
+            <p><label>Conferma E-mail: <span class="star">*</span><br></label>
+               <input class="field f-border" type="email" name="remail" autocomplete="off" required /></p>
+            <p><label>Messaggio: <span class="star">*</span><br></label>
+               <textarea class="form-text f-border" rows="10" cols="40" name="message" required ></textarea></p>
+
+            <!-- privacy policy acceptance -->
+            <div class="privacy">
+               <p>Confermi di aver letto e di accettare le modalit&agrave; di trattamento dei tuoi dati personali come descritto nella &quot;<a href="../privacy-policy/privacy-policy" target="_blank">Privacy policy</a>&quot;?</p>
+            </div>
+            <div class="agree">
+               <input type="checkbox" class="checkbox" name="agree" value="accetto" required >
+               Confermo <span class="star">*</span>
+            </div>
+            <!-- end privacy policy acceptance -->
+
+            <br>
+            <div class="button-container">
+
+               <!-- filtro anti-spam - re-captcha invisible v2 di google -->
+               <div class="g-recaptcha" data-sitekey="6LclxrMUAAAAAOIVAyoCwSesEhcLsXQbJ6H1QH_Q"></div>
+               <br>
+               <!-- <input class="button" type="reset" value="Pulisci">&nbsp; -->
+               <input class="button" type="submit" name="submit" value="Invia" >
+            </div>
+
+         </form>
+
+      </div> <!-- END form-container -->
+
+      <!-- close the tab button -->
+      <a href="javascript:self.close()">
+      <div class="close-button">Chiudi</div>
+      </a>
+
+   </div> <!-- END flex-container -->
+
+   <footer class="flex-footer">
+      <div class="flex-footer__ele">
+         <div class="footer-column">
+             Copyright &copy; 2019 - Renzo Carara - All rights reserved<br>
+             <a href="./privacy-policy/privacy-policy" target="_blank">Privacy policy</a><br>
+             <a href="./cookie-policy/cookie-policy" target="_blank">Cookie policy</a><br><br>
+         </div>
+      </div>
+   </footer>
+
+<!-- load my js -->
+<script src="./contact.js"></script>
+
+</body>
+</html>

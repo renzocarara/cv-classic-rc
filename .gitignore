@@ -1,0 +1,2 @@
+# elenco file e directory che verranno ignorati da git
+__altro/*
