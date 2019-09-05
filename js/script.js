@@ -1,12 +1,5 @@
 $(document).ready(function() {
 
-  // NAVBAR -- display/hide dropdown menu clicking on nav icon
-  var hamburger = $(".nav__icon");
-  hamburger.click(function(e) {
-    $(".nav__menu").toggleClass('is-open');
-    e.preventDefault();
-  });
-
   // BACK BUTTON -- make "back to top "button appear/disappear
   var scrollTop = $(".scroll-to-top");
   $(window).scroll(function() {
@@ -19,7 +12,7 @@ $(document).ready(function() {
     }
   }); // END "back to top" button
 
-  // SMOOTH SCROLL - Add smooth scrolling to all links
+  // SMOOTH SCROLL - Add smooth scrolling to all internal links
   $("a").on('click', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior
@@ -46,16 +39,11 @@ $(document).ready(function() {
 }); //END document.ready
 
 //  NAVBAR -- transform menu icon from hamburger to cross and vice-versa
-function hamburgerOrX(x) {
-  x.classList.toggle("change");
-} // END hamburger-cross toggle
-
-//  NAVBAR -- hide dropdown menu after user selection
-function hideMenu(x) {
-  $(".nav__menu").toggleClass('is-open'); // hide dropdown menu
-  $(".nav__icon").toggleClass('change'); // toggle (X) icon to hamburger icon
-}
-
+//            and hide/show the dropdown menu
+function ShowHideMenu(x) {
+  $(".nav__icon").toggleClass('change'); // toggle menu icon (X)<-->hamburger
+  $(".nav__menu").toggleClass('is-open'); // show/hide dropdown menu
+} // END ShowHideMenu
 
 // MODAL -- Get the modal box
 var lavoroModal = document.getElementById("lavoro-modal");

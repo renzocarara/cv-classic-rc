@@ -11,130 +11,282 @@
        url('fonts/RobotoRegular.svg#RobotoRegular') format('svg');
        font-display: swap;
 } */
-
 /** width and height values includes the padding and border size **/
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box
 }
 
-body
-{ height: 100%;
-	margin: 0; padding: 0; color: #000;
-	font-family: Arial, Helvetica, sans-serif;
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 100%;
-	background: #d2e3f1;
+  background: #d2e3f1;
 }
 
-h1 {color: #071774; font-size: 2.2em;}
-h2 {color: #0e2d94; font-size: 1.8em;}
-h3 {color: #0e2d94; font-size: 1.4em;}
-h4 {color: #133d58; font-size: 1.0em;}
-h5 {color: #0e2d94; font-size: 0.8em;}
+h1 {
+  color: #071774;
+  font-size: 2.2em;
+}
 
-a:link {color: #fff;}
-a:hover {color: #070707;text-decoration:underline;}
-a:visited {color: #550f92;}
+h2 {
+  color: #0e2d94;
+  font-size: 1.8em;
+}
+
+h3 {
+  color: #0e2d94;
+  font-size: 1.4em;
+}
+
+h4 {
+  color: #133d58;
+  font-size: 1.0em;
+}
+
+h5 {
+  color: #0e2d94;
+  font-size: 0.8em;
+}
+
+a:link {
+  color: #fff;
+}
+
+a:hover {
+  color: #070707;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #550f92;
+}
 
 /** icons fot contact links **/
-.contacts-icons a {padding-right: 10px }
-.contacts-icons img {border: 2px solid #506ed3;width:32px;height:32px;}
-.contacts-icons img:hover {border: #c7ddf0;}
+.contacts-icons a {
+  padding-right: 10px
+}
+
+.contacts-icons img {
+  border: 2px solid #506ed3;
+  width: 32px;
+  height: 32px;
+}
+
+.contacts-icons img:hover {
+  border: #c7ddf0;
+}
 
 /* main conainer for whole page */
-.container	{background-color: #c7ddf0; height:100%; width: 100%; max-width: 1920px; margin: 0 auto; }
+.container {
+  background-color: #c7ddf0;
+  height: 100%;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
 
 /**************/
 /*** Header ***/
 /**************/
-.header {color: #20357a; background-color: #4c84d8;
+.header {
+  color: #20357a;
+  background-color: #4c84d8;
   overflow: auto;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */}
-.titles-logo{padding: 10px 10px 0px 10px;}
-.titles{color:#fff; display:inline-block;background: #4c84d8; font-size: 16px;}
-.titles h1 {display: block; margin: 0 0 5px 0;}
-.titles h4 {color: #0e2d94; margin: 10px 0 5px 0; padding-left: 4px;}
-.logo {color:#fff; float:right;}
-.logo img {border: 4px solid #1529db; max-width: 100%; height: auto; border-radius: 180px;}
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+  /* Full width */
+}
+
+.titles-logo {
+  padding: 10px 10px 0px 10px;
+}
+
+.titles {
+  color: #fff;
+  display: inline-block;
+  background: #4c84d8;
+  font-size: 16px;
+}
+
+.titles h1 {
+  display: block;
+  margin: 0 0 5px 0;
+}
+
+.titles h4 {
+  color: #0e2d94;
+  margin: 10px 0 5px 0;
+  padding-left: 4px;
+}
+
+.logo {
+  color: #fff;
+  float: right;
+}
+
+.logo img {
+  border: 4px solid #1529db;
+  max-width: 100%;
+  height: auto;
+  border-radius: 180px;
+}
 
 /**********************/
 /*** Navigation bar ***/
 /**********************/
-.nav {background: #63a0d8; border-bottom: 2px solid #1529db; border-top: 2px solid #1529db;}
+.nav {
+  background: #63a0d8;
+  border-bottom: 2px solid #1529db;
+  border-top: 2px solid #1529db;
+}
 
-.nav__menu {margin: 0; padding: 0px 0px 0px 20px;
-            list-style: none;
-            -webkit-transition: all 0.3s ease-out;
-            -o-transition: all 0.3s ease-out;
-            transition: all 0.3s ease-out}
+.nav__menu {
+  margin: 0;
+  padding: 0px 0px 0px 20px;
+  list-style: none;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out
+}
 
-.nav__menu__item {display: inline-block; margin: 5px; font-size: 1.0em; font-weight: bold; text-transform: uppercase}
-.nav__menu__item a {color: #fff; display: block; text-decoration: none; padding: 4px;}
-.nav__menu__item a:hover {color: #fff; background-color: #1121af;}
+.nav__menu__item {
+  display: inline-block;
+  margin: 5px;
+  font-size: 1.0em;
+  font-weight: bold;
+  text-transform: uppercase
+}
+
+.nav__menu__item a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  padding: 4px;
+}
+
+.nav__menu__item a:hover {
+  color: #fff;
+  background-color: #1121af;
+}
 
 /* Navigation icon "hamburger" */
-.nav__icon{display: inline-block; padding:2px 2px 2px 10px ; cursor: pointer; display:none;}
+.nav__icon {
+  display: inline-block;
+  padding: 2px 2px 2px 10px;
+  cursor: pointer;
+  display: none;
+}
+
 .nav__icon__bar1,
 .nav__icon__bar2,
-.nav__icon__bar3{width: 24px; height: 4px;
-                 background-color: #fff; margin: 4px 0;
-                 -webkit-transition: 0.3s;
-                 -o-transition: 0.3s;
-                 transition: 0.3s;}
+.nav__icon__bar3 {
+  width: 24px;
+  height: 4px;
+  background-color: #fff;
+  margin: 4px 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
 /* add .change class to "nav__icon__bar" classes to change styles */
-.change .nav__icon__bar1 {-webkit-transform: rotate(-45deg) translate(-6px, 6px);
-                          -ms-transform: rotate(-45deg) translate(-6px, 6px);
-                          transform: rotate(-45deg) translate(-6px, 6px);}
-.change .nav__icon__bar2 {opacity: 0;}
-.change .nav__icon__bar3 {-webkit-transform: rotate(45deg) translate(-6px, -6px);
-                          -ms-transform: rotate(45deg) translate(-6px, -6px);
-                          transform: rotate(45deg) translate(-6px, -6px);}
+.change .nav__icon__bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  -ms-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.change .nav__icon__bar2 {
+  opacity: 0;
+}
+
+.change .nav__icon__bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -6px);
+  -ms-transform: rotate(45deg) translate(-6px, -6px);
+  transform: rotate(45deg) translate(-6px, -6px);
+}
 
 /* handle internal links */
 /* set a negative offset value great at least the fixed header height */
 /* to make the scrolling stops at the right position */
-.anchor-offset{
-    display: block;
-    position: relative;
-    top: -170px;
-    visibility: hidden;
+.anchor-offset {
+  display: block;
+  position: relative;
+  top: -170px;
+  visibility: hidden;
 }
 
 /***************/
 /*** Content ***/
 /***************/
 .flex-container {
-margin-top: 147px;   /* previous element (header) is position: fixed */
-                     /* add a top margin to avoid content overlay */
-display: -webkit-box;
-display: -ms-flexbox;
-display: flex;
-display: -webkit-flex;
--webkit-box-orient: horizontal;
--webkit-box-direction: normal;
--ms-flex-direction: row;
-flex-direction: row;
--webkit-box-align: stretch;
--ms-flex-align: stretch;
-align-items: stretch;
--webkit-align-items: stretch;}
+  margin-top: 147px;
+  /* previous element (header) is position: fixed */
+  /* add a top margin to avoid content overlay */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-items: stretch;
+}
 
-.main{background: #d2e3f1;width: 76%; max-width: 1920px; padding: 0 2%;}
-.main__article-content {background-color: #bfd7ec; width:100%; padding: 0 0.8em;
-                        -webkit-box-shadow: 5px 5px 5px #97b8d3;  box-shadow: 5px 5px 5px #97b8d3;}
-.main__article-content h3 {margin-bottom: 0px; padding-top: 8px; padding-bottom: 4px;}
-.main__article-content h4 {margin-top: 0px; padding-top: 2px; padding-bottom: 0px;}
-.main__article-content p {margin-top: 0px; padding-bottom: 8px;}
-.main__article-content ul {margin-top: 0px; padding-bottom: 18px;}
+.main {
+  background: #d2e3f1;
+  width: 76%;
+  max-width: 1920px;
+  padding: 0 2%;
+}
+
+.main__article-content {
+  background-color: #bfd7ec;
+  width: 100%;
+  padding: 0 0.8em;
+  -webkit-box-shadow: 5px 5px 5px #97b8d3;
+  box-shadow: 5px 5px 5px #97b8d3;
+}
+
+.main__article-content h3 {
+  margin-bottom: 0px;
+  padding-top: 8px;
+  padding-bottom: 4px;
+}
+
+.main__article-content h4 {
+  margin-top: 0px;
+  padding-top: 2px;
+  padding-bottom: 0px;
+}
+
+.main__article-content p {
+  margin-top: 0px;
+  padding-bottom: 8px;
+}
+
+.main__article-content ul {
+  margin-top: 0px;
+  padding-bottom: 18px;
+}
 
 /*** The Accordion ***/
 .accordion {
   color: #133d58;
   background-color: #bfd7ec;
   cursor: pointer;
-  margin:0px;
+  margin: 0px;
   padding-bottom: 1px;
   width: 100%;
   text-align: left;
@@ -144,10 +296,12 @@ align-items: stretch;
   -o-transition: 0.4s;
   transition: 0.4s;
 }
+
 .accordion:hover {
   background-color: #aecfec;
   color: #1574c7;
 }
+
 .accordion:before {
   content: "+";
   font-size: 24px;
@@ -161,6 +315,7 @@ align-items: stretch;
   /* border-bottom: 12px solid #aecfec; */
   color: #1574c7;
 }
+
 .active:before {
   content: "-";
   font-size: 24px;
@@ -180,12 +335,33 @@ align-items: stretch;
 /***************/
 /*** Sidebar ***/
 /***************/
-.aside {color: #fff; background-color: #86a9c7; width:24%; max-width: 1920px;  padding: 0 2%;}
-.aside__article-content {background-color: #7ea1c2;width:100%;padding: 0 0.8em;
-                         -webkit-box-shadow: 5px 5px 5px #3d6175;
-                         box-shadow: 5px 5px 5px #3d6175;}
-.aside__article-content h3 {color: #c4ddff; margin-bottom: 0px; padding-top: 8px; padding-bottom: 4px;}
-.aside__article-content p {margin-top: 0px; padding-bottom: 8px;}
+.aside {
+  color: #fff;
+  background-color: #86a9c7;
+  width: 24%;
+  max-width: 1920px;
+  padding: 0 2%;
+}
+
+.aside__article-content {
+  background-color: #7ea1c2;
+  width: 100%;
+  padding: 0 0.8em;
+  -webkit-box-shadow: 5px 5px 5px #3d6175;
+  box-shadow: 5px 5px 5px #3d6175;
+}
+
+.aside__article-content h3 {
+  color: #c4ddff;
+  margin-bottom: 0px;
+  padding-top: 8px;
+  padding-bottom: 4px;
+}
+
+.aside__article-content p {
+  margin-top: 0px;
+  padding-bottom: 8px;
+}
 
 /**************/
 /*** Footer ***/
@@ -204,34 +380,50 @@ align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
   -webkit-align-items: stretch;
-  border-top: 2px solid #1529db; background-color: #4c84d8; color:#fff;}
+  border-top: 2px solid #1529db;
+  background-color: #4c84d8;
+  color: #fff;
+}
 
- /* footer is made of three flex elements 333px width
+/* footer is made of three flex elements 333px width
     when available room is less the 999px the most left column is moved
     under the other two - when available room is less than 666px the three
     elements are stacked one each other
  */
-.flex-footer__ele {-webkit-box-flex: 1;
-                   -ms-flex: 1 1 333px;
-                   flex: 1 1 333px;
-                   -webkit-flex: 1 1 333px;
-                   max-width:1920px; background-color: #4c84d8; padding:12px;}
+.flex-footer__ele {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 333px;
+  flex: 1 1 333px;
+  -webkit-flex: 1 1 333px;
+  max-width: 1920px;
+  background-color: #4c84d8;
+  padding: 12px;
+}
 
-.column {display:block; float: left;}
-.html-css-icon {margin:0; padding-left: 20px;}
-.html-css-icon img {width:50px;height:50px;}
+.column {
+  display: block;
+  float: left;
+}
+
+.html-css-icon {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.html-css-icon img {
+  width: 50px;
+  height: 50px;
+}
 
 /**************/
 /*** Others ***/
 /**************/
-
 /************* Clearfix ***************/
 .clearfix::after {
-	content: "";
-	display: table;
-	clear: both;
-  }
-
+  content: "";
+  display: table;
+  clear: both;
+}
 
 /************* "back to top" button *************/
 .scroll-to-top {
@@ -240,80 +432,159 @@ align-items: stretch;
   position: fixed;
   right: 12px;
   bottom: 10px;
-  background-color: rgba(63, 165, 190, 0.329);
+  background-color: rgba(63, 165, 190, 0.33);
   padding: 12px;
   -moz-border-radius: 180px;
   -webkit-border-radius: 180px;
   border-radius: 180px;
   border: 2px solid #0000ff;
-  opacity: 0; }
-.scroll-to-top:hover {background-color: #0f6f9b;}
-.scroll-to-top a {font-size: 14px; color: #fff;}
+  opacity: 0;
+}
+
+.scroll-to-top:hover {
+  background-color: #3fa5be;
+  /* background-color: #0f6f9b; */
+}
+
+.scroll-to-top a {
+  font-size: 14px;
+  color: #fff;
+}
 
 /************** The Modal ****************/
 .lavoro-modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
 }
-.lavoro{background-color: #7fa3da; margin: auto;
-        border: 2px solid rgb(52, 82, 138); width: 80%;}
-.lavoro__header{background-color: #7fa3da; padding: 0 2%;}
-.lavoro__content{background-color: #bfd7ec; padding: 1% 2%;}
-.lavoro__footer{background-color: #7fa3da; padding: 0 2%;}
-.lavoro__footer h4 {color: #fff;}
-.close {margin: 15px; color: #fff; float: right; font-size: 28px; font-weight: bold;}
+
+.lavoro {
+  background-color: #7fa3da;
+  margin: auto;
+  border: 2px solid rgb(52, 82, 138);
+  width: 80%;
+}
+
+.lavoro__header {
+  background-color: #7fa3da;
+  padding: 0 2%;
+}
+
+.lavoro__content {
+  background-color: #bfd7ec;
+  padding: 1% 2%;
+}
+
+.lavoro__footer {
+  background-color: #7fa3da;
+  padding: 0 2%;
+}
+
+.lavoro__footer h4 {
+  color: #fff;
+}
+
+.close {
+  margin: 15px;
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
 .close:hover, .close:focus {
-  color: rgb(0, 0, 0); text-decoration: none; cursor: pointer;}
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  cursor: pointer;
+}
 
 /******************************************/
 /************** MEDIA QUERIES *************/
 /******************************************/
 /** Tablet **/
 /* @media (max-width: 998px) {} */
-
 /** Smartphone **/
-@media (max-width: 767px){
-
-.nav {z-index: 100; width:100%;}
-
-/** make hamburger icon visible**/
-.nav__icon {display: block; width: 38px;}
-
-/** hide nav bar giving zero height **/
-.nav__menu {width:100%;height:0px; overflow: hidden;}
-
-/** stack vertically all the navbar items **/
-.nav__menu__item {display: block; margin: 0px;}
-
-/** make the navbar dropdown menu appears when this class is applied **/
-.is-open {height:160px; overflow: auto;}
-
-/** change the flex container direction property to stack the
-    flex items (main and aside) vertically
-    sidebar is now displayed below the main **/
-.flex-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+@media (max-width: 767px) {
+  .nav {
+    z-index: 100;
+    width: 100%;
   }
 
-/** no more sidebar on the left, give main and sidebar a 100% width **/
-.aside {width:100%;}
-.main {width: 100%; border-bottom: 2px solid #1529db;}
+  /** make hamburger icon visible**/
+  .nav__icon {
+    display: block;
+    width: 38px;
+  }
 
-} /** close @media - smartphone **/
+  /** hide nav bar giving zero height **/
+  .nav__menu {
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+  }
 
+  /** stack vertically all the navbar items **/
+  .nav__menu__item {
+    display: block;
+    margin: 0px;
+  }
+
+  /** make the navbar dropdown menu appears when this class is applied **/
+  .is-open {
+    height: 160px;
+    /* overflow: auto; */
+  }
+
+  /* add a further top margin when the dropdown menu is displayed
+  to avoid menu overlay onto the content */
+  .change-topmargin {
+    margin-top: 307px;
+  }
+
+  /** change the flex container direction property to stack the
+    flex items (main and aside) vertically
+    sidebar is now displayed below the main **/
+  .flex-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  /** no more sidebar on the left, give main and sidebar a 100% width **/
+  .aside {
+    width: 100%;
+  }
+
+  .main {
+    width: 100%;
+    border-bottom: 2px solid #1529db;
+  }
+}
+
+/** close @media - smartphone **/
 /** for really small screens remove the logo **/
-@media (max-width: 356px){
-.logo {display: none;}
-} /** close @media - really small screen **/
+@media (max-width: 356px) {
+  .logo {
+    display: none;
+  }
+}
+
+/** close @media - really small screen **/
