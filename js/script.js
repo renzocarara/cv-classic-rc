@@ -39,11 +39,25 @@ $(document).ready(function() {
 }); //END document.ready
 
 //  NAVBAR -- transform menu icon from hamburger to cross and vice-versa
-//            and hide/show the dropdown menu
-function ShowHideMenu(x) {
+//            or hide/show the dropdown menu
+function ShowHideMenu() {
   $(".nav__icon").toggleClass('change'); // toggle menu icon (X)<-->hamburger
   $(".nav__menu").toggleClass('is-open'); // show/hide dropdown menu
 } // END ShowHideMenu
+
+// find the nav icon object reference to work on it
+// actually the getElements... returns an array of all
+// the elements with class equal to nav__icon
+var nav__icon = document.getElementsByClassName('nav__icon');
+// listen for click event on nav_icon element
+nav__icon[0].addEventListener('click', ShowHideMenu);
+
+// find the nav__menu object reference to work on it
+// actually the getElements... returns an array of all
+// the elements with class equal to nav__menu
+var nav__menu = document.getElementsByClassName('nav__menu');
+// listen for click event on nav_menu element
+nav__menu[0].addEventListener('click', ShowHideMenu);
 
 // MODAL -- Get the modal box
 var lavoroModal = document.getElementById("lavoro-modal");
